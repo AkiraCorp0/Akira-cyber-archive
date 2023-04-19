@@ -1,3 +1,5 @@
+ア | キ | ラ
+
 
 ## FIND SUID BIN
 
@@ -20,9 +22,32 @@ Contrairement au **_SUID_**, le **_SGID_**,  s’applique aussi bien aux fichie
 Spawn the local http server
 
 >$ python3 -m http.server 1337
+
+
+
 >$ python -m SimpleHTTPServer 9000
 
 Get shared file 
 
 >$ wget http://Myip/file
 
+
+
+## FIND SPECIFIC FILE
+
+>$ find PATH OPTION SEARCH
+>
+>$ find / -name "flag.txt" 2>/dev/null
+
+Option
+
+-name, -iname : Search by name
+-type                : Search by type
+-user, -group   : Search by group or user
+-perm              : Search by perm
+
+## PIPE INTO  VOID
+
+>$ 2>/dev/null
+>
+>$ command | 2>/dev/null
