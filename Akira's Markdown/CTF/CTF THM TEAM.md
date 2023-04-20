@@ -60,7 +60,7 @@ Im filtering all http response with size 11366
 
 ![](https://i.imgur.com/UK0YPWi.png)
 
-Look like we find the sebdomain DEV 
+Look like we find the subdomain DEV 
 Im adding dev.team.thm to my /etc/hosts
 
 ![](https://i.imgur.com/0UIMsQT.png)
