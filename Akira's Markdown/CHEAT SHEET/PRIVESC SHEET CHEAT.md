@@ -41,7 +41,7 @@ Get shared file
 
 Option
 
--name, -iname : Search by name
+-name, -iname : Search by name 
 -type                : Search by type
 -user, -group   : Search by group or user
 -perm              : Search by perm
@@ -51,3 +51,11 @@ Option
 >$ 2>/dev/null
 >
 >$ command | 2>/dev/null
+
+## $PATH SPOOFING
+
+> $ export PATH="/tmp/fakepath:$PATH"
+
+## SPAWN BETTER SHELL
+
+>$ python3 -c 'import pty;pty.spawn("/bin/bash")'
